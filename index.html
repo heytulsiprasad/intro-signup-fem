@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<body>
+  <!-- 
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+
+  <main class="container">
+    <header class="heading">
+      <div class="heading__title">
+        Learn to code by watching others
+      </div>
+      <div class="heading__caption">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </div>
+    </header>
+    <section class="cta">
+      <div class="cta__callout">
+        <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+      </div>
+      <div class="cta__form">
+        <form action="POST" class="cta__form-input">
+          <input class="cta__form-input--value" type="text" name="first-name" placeholder="First Name" required />
+          <p class="required">First name cannot be empty</p>
+          <input class="cta__form-input--value" type="text" name="last-name" placeholder="Last Name" required />
+          <p class="required">Last name cannot be empty</p>
+          <input class="cta__form-input--value" type="email" name="email" placeholder="Email Address" required />
+          <p class="required">Looks like this is not an email</p>
+          <input class="cta__form-input--value" type="password" name="password" placeholder="Password" required />
+          <p class="required">Password cannot be empty</p>
+          <button class="cta__form-input--value cta__form-input--btn" type="submit" name="submit">Claim Your
+            Free Trial</button>
+          <label class="cta__form-input--value" for="submit">By clicking the button, you are agreeing to our <span>Terms
+              and Services</span></label>
+        </form>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
