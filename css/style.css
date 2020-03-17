@@ -23,8 +23,7 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   background-color: var(--color-red);
-  background-image: url(/images/bg-intro-desktop.png);
-  overflow: hidden; }
+  background-image: url(/images/bg-intro-desktop.png); }
 
 .heading__title {
   font-size: 3.4rem;
@@ -86,7 +85,7 @@ body {
   border-radius: .5rem;
   padding: 1rem 2.5rem;
   box-shadow: 0 0.45rem 0 rgba(0, 0, 0, 0.12);
-  transition: all .3s ease-out;
+  transition: all .1s linear;
   cursor: pointer; }
   @media only screen and (max-width: 1300px) {
     .cta__callout {
@@ -102,6 +101,9 @@ body {
     .cta__callout {
       margin: 0 0;
       box-sizing: content-box; } }
+  @media only screen and (max-width: 350px) {
+    .cta__callout {
+      box-sizing: border-box; } }
   .cta__callout p {
     text-align: center;
     padding: 0 4rem; }
@@ -169,7 +171,7 @@ body {
       letter-spacing: .05rem;
       padding: 1.1rem 8rem;
       box-shadow: 0 0.45rem 0 var(--color-green-darkest);
-      transition: all .3s ease;
+      transition: all .05s ease;
       cursor: pointer;
       text-transform: uppercase; }
       @media only screen and (max-width: 1300px) {
@@ -254,7 +256,7 @@ body {
   flex-basis: 50%; }
 
 .footer {
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: 90%; }
   @media only screen and (max-width: 1300px) and (min-width: 1080px) {
     .footer {

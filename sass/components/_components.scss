@@ -1,6 +1,5 @@
 .heading {
 
-
     &__title {
         font-size: 3.4rem;
         color: #fff;
@@ -74,7 +73,7 @@
         border-radius: .5rem;
         padding: 1rem 2.5rem;
         box-shadow: 0 .45rem 0 rgba(#000000, .12);
-        transition: all .3s ease-out;
+        transition: all .1s linear;
         cursor: pointer;
 
         @media only screen and (max-width: $bp-large) {
@@ -95,6 +94,9 @@
             box-sizing: content-box;
         }
 
+        @media only screen and (max-width: 350px) {  // style for iphone 5/SE
+            box-sizing: border-box;
+        }
 
         p {
             text-align: center;
@@ -193,7 +195,7 @@
                 letter-spacing: .05rem;
                 padding: 1.1rem 8rem;
                 box-shadow: 0 .45rem 0 var(--color-green-darkest);
-                transition: all .3s ease;
+                transition: all .05s ease;
                 cursor: pointer;
                 text-transform: uppercase;
 
