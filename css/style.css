@@ -23,7 +23,8 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   background-color: var(--color-red);
-  background-image: url(/images/bg-intro-desktop.png); }
+  background-image: url(/images/bg-intro-desktop.png);
+  overflow: hidden; }
 
 .heading__title {
   font-size: 3.4rem;
@@ -177,7 +178,7 @@ body {
       .cta__form-input--btn:hover {
         background-color: var(--color-green-dark); }
       .cta__form-input--btn:active {
-        transform: translateY(2px) scale(0.995);
+        transform: translateY(2px);
         box-shadow: 0 0.15rem 0 var(--color-green-darkest); }
     .cta__form-input label {
       font-size: .7rem;
@@ -204,6 +205,23 @@ body {
   transition: all .5s ease;
   opacity: 0;
   visibility: hidden; }
+
+.attribution {
+  font-size: .8rem;
+  color: #fff;
+  font-weight: 500;
+  text-transform: lowercase; }
+  .attribution span {
+    display: block;
+    text-align: right;
+    font-weight: 600; }
+    @media only screen and (max-width: 870px) {
+      .attribution span {
+        text-align: center; } }
+
+.attribution a {
+  text-decoration: none;
+  color: var(--color-dark-blue); }
 
 .container {
   display: flex;
@@ -234,3 +252,13 @@ body {
   align-items: center;
   justify-content: center;
   flex-basis: 50%; }
+
+.footer {
+  margin-top: 1rem;
+  width: 90%; }
+  @media only screen and (max-width: 1300px) and (min-width: 1080px) {
+    .footer {
+      width: 80%; } }
+  @media only screen and (min-width: 1500px) {
+    .footer {
+      width: 80%; } }

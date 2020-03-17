@@ -32,4 +32,18 @@
     align-items: center;
     justify-content: center;
     flex-basis: 50%;
+
+}
+
+.footer {
+    margin-top: 1rem;
+    width: 90%;
+
+    @media only screen and (max-width: $bp-large) and (min-width: $bp-big) {
+        width: 80%;
+    }
+
+    @media only screen and (min-width: $bp-largest) {
+        width: 80%;
+    }
 }

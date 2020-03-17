@@ -206,7 +206,7 @@
                 }
 
                 &:active {
-                    transform: translateY(2px) scale(.995);
+                    transform: translateY(2px);
                     box-shadow: 0 .15rem 0 var(--color-green-darkest);
                 }
             }
@@ -243,4 +243,26 @@
     transition: all .5s ease;
     opacity: 0;
     visibility: hidden;
+}
+
+.attribution {
+    font-size: .8rem;
+    color: #fff;
+    font-weight: 500;
+    text-transform: lowercase;
+
+    span {
+        display: block;
+        text-align: right;
+        font-weight: 600;
+
+        @media only screen and (max-width: $bp-normal) {
+            text-align: center;
+        }
+    }
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--color-dark-blue);
 }
