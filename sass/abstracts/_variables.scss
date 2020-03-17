@@ -1,4 +1,3 @@
-
 :root {
     --color-red: hsl(0, 100%, 74%);
     --color-green: hsl(154, 59%, 51%);
@@ -10,4 +9,13 @@
 
     --color-dark-blue: hsl(249, 10%, 26%);
     --color-grayish-blue: hsl(246, 25%, 77%);
+    --color-placeholder-blue: hsla(244, 7%, 42%, 0.767);
 }
+
+$bp-largest: 1500px;
+$bp-large: 1300px;
+$bp-big: 1080px;
+$bp-normal: 870px;
+$bp-small: 510px;
+$bp-smallest: 470px;
+$bp-extra-smallest: 410px;

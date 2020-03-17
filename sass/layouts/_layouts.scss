@@ -2,6 +2,15 @@
     display: flex;
     padding: 6rem 9rem;
     min-height: 100vh;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-normal) {
+        flex-direction: column;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 5rem 5rem;
+    }
 }
 
 .heading {
@@ -10,12 +19,17 @@
     flex-direction: column;
     justify-content: center;
     flex-basis: 50%;
+
+    @media only screen and (max-width: $bp-extra-smallest) {
+        width: 20rem;
+        align-self: center;
+    }
 }
 
 .cta {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-basis: 50%;
 }

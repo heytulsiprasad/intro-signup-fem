@@ -1,10 +1,36 @@
 .heading {
+
+
     &__title {
         font-size: 3.4rem;
         color: #fff;
         font-weight: 700;
         line-height: 3.5rem;
         letter-spacing: .05rem;
+
+        @media only screen and (min-width: $bp-largest) {
+            max-width: 80%;
+            font-size: 4rem;
+            line-height: 4.5rem;
+        }
+
+        @media only screen and (max-width: $bp-normal) {
+            text-align: center;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 1.6rem;
+        }
+
+        @media only screen and (max-width: $bp-extra-smallest) {
+            font-size: 1.85rem;
+            line-height: 2rem;
+        }
     }
 
     &__caption {
@@ -14,10 +40,32 @@
         color: #fff;
         font-weight: 400;
         line-height: 1.7;
+
+        @media only screen and (min-width: $bp-largest) {
+            max-width: 70%;
+            font-size: 1.1rem;
+        }
+
+        @media only screen and (max-width: $bp-normal) {
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-extra-smallest) {
+            font-size: 1rem;
+            line-height: 1.6rem;
+            margin: 3rem 0;
+            box-sizing: content-box;
+        }
     }
 }
 
 .cta {
+
+    @media only screen and (max-width: $bp-extra-smallest) {
+        margin: 0 -3.75rem;
+    }
 
     &__callout {
         background-color: var(--color-accent-blue);
@@ -29,10 +77,42 @@
         transition: all .3s ease-out;
         cursor: pointer;
 
+        @media only screen and (max-width: $bp-large) {
+            padding: 1rem .15rem;
+        }
+
+        @media only screen and (max-width: $bp-big) {
+            padding: 1rem 1.54rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 0.6rem -.1rem;
+            width: 18rem;
+        }
+
+        @media only screen and (max-width: $bp-extra-smallest) {
+            margin: 0 0;
+            box-sizing: content-box;
+        }
+
+
         p {
-            margin-left: 4.5rem;
-            margin-right: 4.5rem;
-            min-width: 100%;
+            text-align: center;
+            padding: 0 4rem;
+
+            @media only screen and (max-width: $bp-big) {
+                font-size: .8rem;
+                padding: 0 3.8rem;
+            }
+
+            @media only screen and (max-width: $bp-smallest) {
+                padding: 0;
+            }
+
+            @media only screen and (max-width: $bp-extra-smallest) {
+                padding: 0 3.5rem;
+                font-size: .9rem;
+            }
         }
 
         span {
@@ -76,7 +156,7 @@
                 font-size: .9rem;
 
                 &::placeholder {
-                    color: var(--color-grayish-blue);
+                    color: var(--color-placeholder-blue);
                     font-weight: 600;
                     font-size: .9rem;
                 }
@@ -89,7 +169,6 @@
                         background-image: url(/images/icon-error.svg);
                         background-repeat: no-repeat;
                         background-position: 95%;
-                        transition: .45s ease-out;
 
                         &+.required {
                             opacity: 1;
@@ -112,11 +191,15 @@
                 font-weight: 600;
                 font-size: .9rem;
                 letter-spacing: .05rem;
-                padding: 1.1rem 8.5rem;
+                padding: 1.1rem 8rem;
                 box-shadow: 0 .45rem 0 var(--color-green-darkest);
                 transition: all .3s ease;
                 cursor: pointer;
                 text-transform: uppercase;
+
+                @media only screen and (max-width: $bp-large) {
+                    padding: 1rem 2rem;
+                }
 
                 &:hover {
                     background-color: var(--color-green-dark);
@@ -134,10 +217,15 @@
                 margin-top: -.09px;
                 color: var(--color-grayish-blue);
                 font-weight: 600;
+                text-align: center;
 
                 span {
                     color: var(--color-red);
                     font-weight: 700;
+                }
+
+                @media only screen and (max-width: $bp-small) {
+                    margin-top: 1rem;
                 }
             }
         }
