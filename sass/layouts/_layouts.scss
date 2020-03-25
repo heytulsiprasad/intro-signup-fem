@@ -11,6 +11,10 @@
     @media only screen and (max-width: $bp-large) {
         padding: 5rem 5rem;
     }
+
+    @media only screen and (max-width: $bp-smallest) and (min-width: $bp-extra-smallest) {
+        padding: 5rem 2rem;
+    }
 }
 
 .heading {
