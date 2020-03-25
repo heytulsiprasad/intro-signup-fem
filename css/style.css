@@ -30,7 +30,7 @@ body {
   color: #fff;
   font-weight: 700;
   line-height: 3.5rem;
-  letter-spacing: .05rem; }
+  letter-spacing: 0.05rem; }
   @media only screen and (min-width: 1500px) {
     .heading__title {
       max-width: 80%;
@@ -82,20 +82,20 @@ body {
   background-color: var(--color-accent-blue);
   color: #fff;
   font-weight: 400;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 1rem 2.5rem;
   box-shadow: 0 0.45rem 0 rgba(0, 0, 0, 0.12);
-  transition: all .1s linear;
+  transition: all 0.1s linear;
   cursor: pointer; }
   @media only screen and (max-width: 1300px) {
     .cta__callout {
-      padding: 1rem .15rem; } }
+      padding: 1rem 0.15rem; } }
   @media only screen and (max-width: 1080px) {
     .cta__callout {
       padding: 1rem 1.54rem; } }
   @media only screen and (max-width: 470px) {
     .cta__callout {
-      padding: 0.6rem -.1rem;
+      padding: 0.6rem -0.1rem;
       width: 18rem; } }
   @media only screen and (max-width: 410px) {
     .cta__callout {
@@ -109,7 +109,7 @@ body {
     padding: 0 4rem; }
     @media only screen and (max-width: 1080px) {
       .cta__callout p {
-        font-size: .8rem;
+        font-size: 0.8rem;
         padding: 0 3.8rem; } }
     @media only screen and (max-width: 470px) {
       .cta__callout p {
@@ -117,7 +117,7 @@ body {
     @media only screen and (max-width: 410px) {
       .cta__callout p {
         padding: 0 3.5rem;
-        font-size: .9rem; } }
+        font-size: 0.9rem; } }
   .cta__callout span {
     font-weight: 600; }
   .cta__callout:hover {
@@ -139,27 +139,21 @@ body {
       outline: none;
       border: 1px solid var(--color-grayish-blue);
       padding-top: 1.1rem;
-      padding-bottom: .8rem;
+      padding-bottom: 0.8rem;
       border-radius: 5px;
-      margin-top: .8rem; }
+      margin-top: 0.8rem; }
     .cta__form-input input {
+      width: 100%;
       color: var(--color-dark-blue);
       padding-left: 1.8rem;
       font-weight: 600;
-      font-size: .9rem; }
+      font-size: 0.9rem; }
       .cta__form-input input::placeholder {
         color: var(--color-placeholder-blue);
         font-weight: 600;
-        font-size: .9rem; }
+        font-size: 0.9rem; }
       .cta__form-input input:active, .cta__form-input input:focus {
         border: 1px solid var(--color-dark-blue); }
-        .cta__form-input input:active:invalid, .cta__form-input input:focus:invalid {
-          background-image: url(/images/icon-error.svg);
-          background-repeat: no-repeat;
-          background-position: 95%; }
-          .cta__form-input input:active:invalid + .required, .cta__form-input input:focus:invalid + .required {
-            opacity: 1;
-            visibility: visible; }
     .cta__form-input button,
     .cta__form-input label {
       border: none; }
@@ -167,11 +161,11 @@ body {
       background-color: var(--color-green);
       color: #fff;
       font-weight: 600;
-      font-size: .9rem;
-      letter-spacing: .05rem;
+      font-size: 0.9rem;
+      letter-spacing: 0.05rem;
       padding: 1.1rem 8rem;
       box-shadow: 0 0.45rem 0 var(--color-green-darkest);
-      transition: all .05s ease;
+      transition: all 0.05s ease;
       cursor: pointer;
       text-transform: uppercase; }
       @media only screen and (max-width: 1300px) {
@@ -183,9 +177,9 @@ body {
         transform: translateY(2px);
         box-shadow: 0 0.15rem 0 var(--color-green-darkest); }
     .cta__form-input label {
-      font-size: .7rem;
+      font-size: 0.7rem;
       align-self: center;
-      margin-top: -.09px;
+      margin-top: -0.09px;
       color: var(--color-grayish-blue);
       font-weight: 600;
       text-align: center; }
@@ -196,20 +190,32 @@ body {
         .cta__form-input label {
           margin-top: 1rem; } }
 
-.required {
-  font-size: .7rem;
+.input__box {
+  position: relative; }
+
+.required__text {
+  font-size: 0.7rem;
   font-style: italic;
   color: var(--color-red);
   text-align: right;
   font-weight: 600;
   position: relative;
-  top: .2rem;
-  transition: all .5s ease;
-  opacity: 0;
-  visibility: hidden; }
+  top: 0.2rem;
+  transition: all 0.5s ease;
+  height: 1rem; }
+
+.required__icon {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  height: 1.5rem;
+  width: 6%;
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .attribution {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #fff;
   font-weight: 500;
   text-transform: lowercase; }
@@ -224,6 +230,9 @@ body {
 .attribution a {
   text-decoration: none;
   color: var(--color-dark-blue); }
+
+.red-box {
+  border: 2px solid var(--color-red); }
 
 .container {
   display: flex;

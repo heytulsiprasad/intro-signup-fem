@@ -39,43 +39,64 @@
                     </p>
                 </div>
                 <div class="cta__form">
-                    <form action="POST" class="cta__form-input">
-                        <input
-                            class="cta__form-input--value"
-                            type="text"
-                            name="first-name"
-                            placeholder="First Name"
-                            required
-                        />
-                        <p class="required">First name cannot be empty</p>
-                        <input
-                            class="cta__form-input--value"
-                            type="text"
-                            name="last-name"
-                            placeholder="Last Name"
-                            required
-                        />
-                        <p class="required">Last name cannot be empty</p>
-                        <input
-                            class="cta__form-input--value"
-                            type="email"
-                            name="email"
-                            placeholder="Email Address"
-                            required
-                        />
-                        <p class="required">Looks like this is not an email</p>
-                        <input
-                            class="cta__form-input--value"
-                            type="password"
-                            name="password"
-                            placeholder="Password"
-                            required
-                        />
-                        <p class="required">Password cannot be empty</p>
+                    <form id="form-box" class="cta__form-input">
+                        <div class="input__box">
+                            <input
+                                class="cta__form-input--value"
+                                id="fName"
+                                name="firstName"
+                                placeholder="First Name"
+                            />
+                            <div id="icon-first"></div>
+                            <p id="text-first" class="required__text">
+                                <!-- First name cannot be empty -->
+                            </p>
+                        </div>
+
+                        <div class="input__box">
+                            <input
+                                class="cta__form-input--value"
+                                id="lName"
+                                name="lastName"
+                                placeholder="Last Name"
+                            />
+                            <div id="icon-last"></div>
+                            <p id="text-last" class="required__text">
+                                <!-- Last name cannot be empty -->
+                            </p>
+                        </div>
+
+                        <div class="input__box">
+                            <input
+                                class="cta__form-input--value"
+                                id="email"
+                                name="email"
+                                placeholder="Email Address"
+                            />
+                            <div id="icon-email"></div>
+                            <p id="text-email" class="required__text">
+                                <!-- Looks like this is not an email -->
+                            </p>
+                        </div>
+
+                        <div class="input__box">
+                            <input
+                                class="cta__form-input--value"
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Password"
+                            />
+                            <div id="icon-password"></div>
+                            <p id="text-password" class="required__text">
+                                <!-- Password cannot be empty -->
+                            </p>
+                        </div>
+
                         <button
                             class="cta__form-input--value cta__form-input--btn"
                             type="submit"
-                            name="submit"
+                            name="submitBtn"
                         >
                             Claim Your Free Trial
                         </button>
@@ -95,10 +116,17 @@
                                 >Frontend Mentor.</a
                             ></span
                         >
-                        <span>Coded by &nbsp;<a href="https://twitter.com/tulsiprasad22">@tulsiprasad22.</a></span>
+                        <span
+                            >Coded by &nbsp;<a
+                                href="https://twitter.com/tulsiprasad22"
+                                >@tulsiprasad22.</a
+                            ></span
+                        >
                     </p>
                 </footer>
             </section>
         </main>
+
+        <script src="/js/client.js"></script>
     </body>
 </html>
